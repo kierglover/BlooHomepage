@@ -7,6 +7,7 @@ $bloo-light-grey: #f8f9fa;
 $bloo-blue: #00a0d2;
 $bloo-grey: #949eb6;
 $bloo-orange: #ffbe5d;
+$bloo-green: #73e999;
 // SASS MIXINS //
 @mixin blue-gradient {
 background: #00c6ff;  /* fallback for old browsers */
@@ -126,8 +127,22 @@ p {
 .feature-card {
      @include feature-card-styles;
      &__subtitle {
-          font-size: 1.35rem;
           @include subtitle-base-styles;
+     &--blue {
+          font-size: 1.35rem;
+          font-weight: bold;
+          color: $bloo-blue;
+     }
+     &--orange {
+          font-size: 1.35rem;
+          font-weight: bold;
+          color: $bloo-orange;
+     }
+     &--green {
+          font-size: 1.35rem;
+          font-weight: bold;
+          color: $bloo-green;
+     }
      }
 }
 
