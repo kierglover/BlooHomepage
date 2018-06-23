@@ -1,0 +1,196 @@
+@import 'media';
+// SASS VARIABLES //
+$font-stack: 'Open Sans', sans-serif;
+// PALLETTE //
+$bloo-white: white;
+$bloo-light-grey: #f8f9fa;
+$bloo-blue: #00a0d2;
+$bloo-grey: #949eb6;
+$bloo-orange: #ffbe5d;
+// SASS MIXINS //
+@mixin blue-gradient {
+background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, $bloo-blue, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, $bloo-blue, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+@mixin cover-bg {
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+@mixin subtitle-base-styles {
+     font-weight: 400;
+     line-height: 1.50;
+}
+
+@mixin feature-card-styles {
+     display: flex;
+    margin-top: -.75rem;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.05), 0 5px 20px 0 rgba(0,0,0,.06), 0 8px 40px 0 rgba(0,0,0,.04);
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 3px;
+    border-color: rgba(148,158,182,.2);
+}
+
+// STYLES //
+body {
+     font-family:$font-stack;
+}
+
+p {
+     padding: 10px 0px 10px 0px;
+     line-height: 1.9rem;
+     font-size: 1em;
+     line-height: 1.9rem;
+     color: $bloo-grey;
+}
+
+.body-content {
+     &__feature-caption {
+          padding: 50px 0px 0px 0px;
+     }
+     &--white {
+          background-color: $bloo-white;
+     }
+     &--grey {
+          background: url('/build/images/BlooGreyBg.jpg') no-repeat;
+          height: 145vh;
+     }
+}
+
+.navbar {
+     padding: 30px;
+     &__navbar-brand {
+          align-items: stretch;
+          display: flex;
+          flex-shrink: 0;
+          min-height: 3.25rem;
+     }
+     &__navbar-item {
+          flex-grow: 0;
+         flex-shrink: 0;
+         color: white;
+         line-height: 1.5;
+         padding: .5rem .75rem;
+         position: relative;
+     }
+     &__navbar-link {
+          font-weight: bold;
+          cursor: pointer;
+          color: white;
+     }
+     &__navbar-item img {
+          max-height: 3rem;
+     }
+}
+
+.hero {
+     background: url('/build/images/BlooHeroBg.jpg') no-repeat center center;
+     @include cover-bg;
+     height: 100vh;
+     &__hero-body {
+          flex-grow: 1;
+         flex-shrink: 0;
+         padding: 5rem 1.5rem;
+     }
+     &__title {
+          color: #fff;
+          font-size: 3rem;
+          font-weight: 600;
+          line-height: 1.125;
+          width: 50%;
+     }
+     &__subtitle {
+          color: #fff;
+          margin: 15px 0px 15px 0px;
+          font-size: 1.5rem;
+          line-height: 1.125;
+          width: 80%;
+          @include subtitle-base-styles;
+     }
+}
+
+.container {
+     padding: 30px;
+     &__subtitle {
+          color: $bloo-blue;
+          font-size: 1.75rem;
+          @include subtitle-base-styles;
+     }
+}
+
+.feature-card {
+     @include feature-card-styles;
+     &__subtitle {
+          font-size: 1.35rem;
+          @include subtitle-base-styles;
+     }
+}
+
+.feature-list-item {
+     &--center {
+          margin: 50px 0px 50px 0px;
+          text-align: center;
+     }
+}
+
+.testimonials {
+     &__card {
+          @include feature-card-styles;
+     }
+     &__card--first {
+          margin-right: 1.6rem!important;
+          @include feature-card-styles;
+     }
+     &__image {
+          display: inline-block;
+          width: 4rem;
+         height: 4rem;
+          border-radius: 50%;
+         margin-right: .5rem;
+     }
+}
+
+.pricing {
+     &__card {
+          background-color: $bloo-light-grey;
+          @include feature-card-styles;
+          width: 50%;
+     &--first {
+          background-color: $bloo-light-grey;
+          margin-right: 1.6rem!important;
+          @include feature-card-styles;
+          width: 50%;
+     }
+     &__title {
+          color: $bloo-blue;
+          font-size: 1.75rem;
+          &--small {
+               color: $bloo-blue;
+               font-size: 4rem;
+          }
+     }
+     &__lead {
+          padding: 0px 30px 0px 30px;
+          font-weight: bold;
+          &--orange {
+               color: $bloo-orange;
+          }
+     }
+     &__list {
+          padding: 50px 0px 50px 0px;
+          &__item {
+               color: $bloo-grey;
+               align-items: center;
+               margin-bottom: .5rem;
+          }
+     }
+     &__button {
+          text-align: center;
+     }
+     }
+}

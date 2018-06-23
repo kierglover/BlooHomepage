@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="829px" height="324px" viewBox="0 0 829 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-107.000000, -355.000000)">
+            <g id="Group-3" transform="translate(107.000000, 345.000000)">
+                <g id="Group" transform="translate(324.000000, 31.000000)" fill="#00A0D2" font-family="Pacifico-Regular, Pacifico" font-size="144" font-weight="normal">
+                    <text id="loo.io" letter-spacing="9.2">
+                        <tspan x="147" y="207">loo</tspan>
+                        <tspan x="337.795313" y="207">.io</tspan>
+                    </text>
+                    <text id="B" transform="translate(93.000000, 136.500000) rotate(-21.000000) translate(-93.000000, -136.500000) " letter-spacing="10.8999996">
+                        <tspan x="42" y="198">B</tspan>
+                    </text>
+                </g>
+                <g id="Group-2">
+                    <circle id="Oval" fill="#00A0D2" cx="162" cy="172" r="162"></circle>
+                    <text id="B" transform="translate(156.540048, 166.244567) rotate(-21.000000) translate(-156.540048, -166.244567) " font-family="Pacifico-Regular, Pacifico" font-size="175" font-weight="normal" letter-spacing="13.2465267" fill="#FFFFFF">
+                        <tspan x="94.5400481" y="240.744567">B</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

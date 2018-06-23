@@ -1,0 +1,15 @@
+@media screen and (min-width: 769px) {
+     .hero.is-large .hero-body {
+         padding-bottom: 15rem;
+         padding-top: 15rem;
+     }
+}
+
+@media screen and (min-width: 769px), print {
+     .testimonials:not(.is-desktop) {
+         display: flex;
+     }
+     .pricing:not(.is-desktop) {
+          display: flex;
+     }
+}
