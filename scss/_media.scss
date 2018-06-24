@@ -13,3 +13,10 @@
           display: flex;
      }
 }
+
+@media screen and (min-width: 769px), print {
+     .footer__wrapper__logo {
+          display: flex;
+          align-items: center;
+     }
+}
