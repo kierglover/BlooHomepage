@@ -51,7 +51,11 @@ p {
   .navbar__navbar-link {
     font-weight: bold;
     cursor: pointer;
-    color: white; }
+    color: white;
+    margin: 0px 10px 0px 10px;
+    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .navbar__navbar-link:hover {
+    color: #00a0d2 !important; }
   .navbar__navbar-item img {
     max-height: 3rem; }
 
@@ -74,12 +78,31 @@ p {
     width: 50%; }
   .hero__subtitle {
     color: #fff;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 30px 0px;
     font-size: 1.5rem;
     line-height: 1.125;
     width: 80%;
     font-weight: 400;
     line-height: 1.50; }
+  .hero__button {
+    background-color: #fff;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.75em - 1px);
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: calc(.75em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-size: 1.25rem !important;
+    background-color: #0FAEE0;
+    color: white;
+    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .hero__button:hover {
+    background-color: #00a0d2;
+    color: white; }
 
 .container {
   padding: 30px; }

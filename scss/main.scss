@@ -1,4 +1,5 @@
 @import 'media';
+@import 'animations';
 // SASS VARIABLES //
 $font-stack: 'Open Sans', sans-serif;
 // PALLETTE //
@@ -35,6 +36,20 @@ background: linear-gradient(to right, $bloo-blue, #00c6ff); /* W3C, IE 10+/ Edge
     border-radius: 10px;
     border: solid 3px;
     border-color: rgba(148,158,182,.2);
+}
+
+@mixin button-styles {
+     background-color: #fff;
+     color: #363636;
+     cursor: pointer;
+     justify-content: center;
+     padding-bottom: calc(.75em - 1px);
+     padding-left: .75em;
+     padding-right: .75em;
+     padding-top: calc(.75em - 1px);
+     text-align: center;
+     white-space: nowrap;
+     border-radius: 5px;
 }
 
 // STYLES //
@@ -83,6 +98,11 @@ p {
           font-weight: bold;
           cursor: pointer;
           color: white;
+          margin: 0px 10px 0px 10px;
+          @include link-hover;
+     }
+     &__navbar-link:hover {
+          color: $bloo-blue!important;
      }
      &__navbar-item img {
           max-height: 3rem;
@@ -107,11 +127,22 @@ p {
      }
      &__subtitle {
           color: #fff;
-          margin: 15px 0px 15px 0px;
+          margin: 15px 0px 30px 0px;
           font-size: 1.5rem;
           line-height: 1.125;
           width: 80%;
           @include subtitle-base-styles;
+     }
+     &__button {
+          @include button-styles;
+          font-size: 1.25rem!important;
+          background-color: #0FAEE0;
+          color: $bloo-white;
+          @include button-hover;
+     }
+     &__button:hover {
+          background-color: $bloo-blue;
+          color: $bloo-white;
      }
 }
 

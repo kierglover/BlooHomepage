@@ -1,0 +1,7 @@
+@mixin link-hover {
+     transition: color .2s cubic-bezier(.645,.045,.355,1);
+}
+
+@mixin button-hover {
+     transition: color .2s cubic-bezier(.645,.045,.355,1),border .2s cubic-bezier(.645,.045,.355,1),background .2s cubic-bezier(.645,.045,.355,1);
+}
