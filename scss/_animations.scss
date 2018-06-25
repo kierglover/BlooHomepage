@@ -5,3 +5,22 @@
 @mixin button-hover {
      transition: color .2s cubic-bezier(.645,.045,.355,1),border .2s cubic-bezier(.645,.045,.355,1),background .2s cubic-bezier(.645,.045,.355,1);
 }
+
+@mixin card-hover {
+     transition: transform .2s cubic-bezier(.645,.045,.355,1),box-shadow .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow .2s cubic-bezier(.645,.045,.355,1);
+}
+
+@mixin scroll-icon-move {
+     @keyframes bounce {
+     0%   {transform: translate3d(0, 0, 0);}
+     50% {transform: translate3d(0, 10px, 0);}
+     100%   {transform: translate3d(0, 0, 0);}
+     }
+     animation: bounce 2s;
+     animation-timing-function: cubic-bezier(0.53,-0.02, 0.21, 0.82);
+     animation-iteration-count: infinite;
+}
+
+@mixin scroll-icon-hover {
+     transition: all .2s ease-in-out;
+}

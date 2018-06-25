@@ -144,6 +144,23 @@ p {
           background-color: $bloo-blue;
           color: $bloo-white;
      }
+     &__scroll__wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     &__scroll-icon {
+     @include scroll-icon-move;
+     margin: 30px;
+    background: url('/build/images/HeroScrollIcon.svg') no-repeat;
+    height: 40px;
+    width: 40px;
+    max-width: 50%;
+    /* Other styles here */
+     }
+     &__scroll-icon:hover {
+          cursor: pointer;
+     }
 }
 
 .container {
@@ -157,6 +174,7 @@ p {
 
 .feature-card {
      @include feature-card-styles;
+     @include card-hover;
      &__subtitle {
           @include subtitle-base-styles;
      &--blue {
@@ -175,6 +193,10 @@ p {
           color: $bloo-green;
      }
      }
+}
+
+.feature-card:hover {
+     box-shadow: 2px 2px 8px 5px rgba(0,0,0,.04), 4px 8px 23px 5px rgba(0,0,0,.04), 6px 11px 43px 5px rgba(0,0,0,.04);
 }
 
 .feature-list-item {

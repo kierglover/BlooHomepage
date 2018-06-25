@@ -103,6 +103,29 @@ p {
   .hero__button:hover {
     background-color: #00a0d2;
     color: white; }
+  .hero__scroll__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .hero__scroll-icon {
+    animation: bounce 2s;
+    animation-timing-function: cubic-bezier(0.53, -0.02, 0.21, 0.82);
+    animation-iteration-count: infinite;
+    margin: 30px;
+    background: url("/build/images/HeroScrollIcon.svg") no-repeat;
+    height: 40px;
+    width: 40px;
+    max-width: 50%;
+    /* Other styles here */ }
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  50% {
+    transform: translate3d(0, 10px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+  .hero__scroll-icon:hover {
+    cursor: pointer; }
 
 .container {
   padding: 30px; }
@@ -119,7 +142,8 @@ p {
   padding: 30px;
   border-radius: 10px;
   border: solid 3px;
-  border-color: rgba(148, 158, 182, 0.2); }
+  border-color: rgba(148, 158, 182, 0.2);
+  transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
   .feature-card__subtitle {
     font-weight: 400;
     line-height: 1.50; }
@@ -135,6 +159,9 @@ p {
       font-size: 1.35rem;
       font-weight: bold;
       color: #73e999; }
+
+.feature-card:hover {
+  box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.04), 4px 8px 23px 5px rgba(0, 0, 0, 0.04), 6px 11px 43px 5px rgba(0, 0, 0, 0.04); }
 
 .feature-list-item--center {
   margin: 50px 0px 50px 0px;
