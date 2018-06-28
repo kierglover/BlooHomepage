@@ -12,6 +12,12 @@
   .footer__wrapper__logo {
     display: flex;
     align-items: center; } }
+@media screen and (max-width: 1087px) {
+  .navbar__navbar-link {
+    color: #949eb6 !important; }
+
+  .navbar-dropdown .navbar-item {
+    color: #949eb6 !important; } }
 @media screen and (min-width: 1088px) {
   .footer__wrapper {
     max-width: 960px;
@@ -58,6 +64,44 @@ p {
     color: #00a0d2 !important; }
   .navbar__navbar-item img {
     max-height: 3rem; }
+  .navbar__navbar__button {
+    background-color: #fff;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.75em - 1px);
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: calc(.75em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: #0FAEE0;
+    color: white;
+    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    font-weight: bold; }
+    .navbar__navbar__button-white {
+      background-color: #fff;
+      color: #363636;
+      cursor: pointer;
+      justify-content: center;
+      padding-bottom: calc(.75em - 1px);
+      padding-left: .75em;
+      padding-right: .75em;
+      padding-top: calc(.75em - 1px);
+      text-align: center;
+      white-space: nowrap;
+      border-radius: 5px;
+      background-color: #fbf7f5;
+      transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      color: #949eb6 !important;
+      font-weight: bold; }
+    .navbar__navbar__button-white:hover {
+      color: #949eb6 !important;
+      background-color: white; }
+  .navbar__navbar__button:hover {
+    background-color: #00a0d2;
+    color: white !important; }
 
 .hero {
   background: url("/build/images/BlooHeroBg.jpg") no-repeat center center;
@@ -144,6 +188,9 @@ p {
   border: solid 3px;
   border-color: rgba(148, 158, 182, 0.2);
   transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .feature-card__icon {
+    margin-right: 20px;
+    vertical-align: baseline; }
   .feature-card__subtitle {
     font-weight: 400;
     line-height: 1.50; }
@@ -200,7 +247,26 @@ p {
   border-radius: 10px;
   border: solid 3px;
   border-color: rgba(148, 158, 182, 0.2);
-  width: 50%; }
+  width: 50%;
+  transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .pricing__card--button {
+    background-color: #fff;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.75em - 1px);
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: calc(.75em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px; }
+  .pricing__card__list {
+    padding: 50px 0px 50px 0px; }
+    .pricing__card__list__item {
+      color: #949eb6;
+      align-items: center;
+      margin-bottom: .5rem; }
   .pricing__card--first {
     background-color: #f8f9fa;
     margin-right: 1.6rem !important;
@@ -211,7 +277,10 @@ p {
     border-radius: 10px;
     border: solid 3px;
     border-color: rgba(148, 158, 182, 0.2);
-    width: 50%; }
+    width: 50%;
+    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .pricing__card--first:hover {
+    box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.04), 4px 8px 23px 5px rgba(0, 0, 0, 0.04), 6px 11px 43px 5px rgba(0, 0, 0, 0.04); }
   .pricing__card__title {
     color: #00a0d2;
     font-size: 1.75rem; }
@@ -225,14 +294,13 @@ p {
       color: #ffbe5d; }
     .pricing__card__lead--green {
       color: #73e999; }
-  .pricing__card__list {
-    padding: 50px 0px 50px 0px; }
-    .pricing__card__list__item {
-      color: #949eb6;
-      align-items: center;
-      margin-bottom: .5rem; }
-  .pricing__card__button {
-    text-align: center; }
+.pricing__card:hover {
+  box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.04), 4px 8px 23px 5px rgba(0, 0, 0, 0.04), 6px 11px 43px 5px rgba(0, 0, 0, 0.04); }
+.pricing__button {
+  text-align: center; }
+
+.check-icon {
+  margin-right: 10px; }
 
 .footer {
   margin: 50px 0px 0px 0px;

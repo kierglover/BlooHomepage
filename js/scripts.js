@@ -1,5 +1,15 @@
 //SCRIPTS
 
+$(document).ready(function() {
+     $(".hero__scroll-icon").click(function() {
+         var offset = 20; //Offset of 20px
+
+         $('html, body').animate({
+             scrollTop: $("#main-section").offset().top + offset
+        }, 1200);
+     });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
 
   // Get all "navbar-burger" elements //
